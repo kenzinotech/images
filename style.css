@@ -1,0 +1,62 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+#app {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#breed-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.breed {
+	background-color: #f5f5f5;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 10px;
+	margin: 10px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+	flex-basis: 300px;
+	min-width: 200px;
+	transition: all 0.3s ease-in-out;
+}
+
+.breed:hover {
+	transform: scale(1.05);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.breed img {
+	width: 200px;
+  height: 200px;
+}
+
+.breed .details {
+	flex-grow: 1;
+}
+
+.breed h2 {
+	margin-top: 0;
+}
